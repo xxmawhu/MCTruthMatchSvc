@@ -419,7 +419,7 @@ void MCTruthMatchSvc::GetFinalChildren(McParticle* aEta,
     }
     parts[0] = aEta;
     for (int i = 1; i < _pid.size(); i++) {
-        int n = index[i];
+        // int n = index[i];
         const SmartRefVector<McParticle>& decays =
             parts[_motherId[i]]->daughterList();
         for (int j = 0; j < decays.size(); j++) {

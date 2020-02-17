@@ -9,4 +9,4 @@ use MdcRecEvent     MdcRecEvent-*        Mdc
 use McDecayModeSvc  McDecayModeSvc-*    Utilities
 
 apply_pattern dual_use_library files=*.cxx components/*.cxx
-macro_append MCTruthMatchSvc_cppflags "-w"
+macro_append MCTruthMatchSvc_cppflags "-Wall"
